@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    /*Facilita dimensionamento dos elementos
+    dizendo que a borda do elemento pertence ao
+    tamanho total deste*/
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+
+    font-family: 'Lato', 'Arial', sans-serif;
+
+    font-weight: 300;
+
+
+    /*Otimiza as fontes para leitura*/
+    text-rendering: optimizeLegibility;
+
+
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,1)), url(img/img-hero-header.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+
+header h1{
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    /*espacamento entre palavras e letras*/
+    word-spacing: 7px;
+    letter-spacing: 1px;
+
+    /*Transforma o texto para letras maiusculas*/
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+header a{
+    text-decoration: none;
+}
+
+.btn:link, 
+.btn:visited{
+
+    
+    border: solid orange;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-right: 10px;
+
+}
+
+.btn-full{
+    color:#fff;
+    background-color: orange;
+}
+
+.btn-ghost{
+    color: orange;
+}
