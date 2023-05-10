@@ -31,6 +31,56 @@ header{
     background-position: center;
 }
 
+header nav{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo{
+    width: 100px;
+    margin-left: 25px;
+
+    border: solid 8px black;
+    border-radius: 40px;
+}
+
+header .logo:hover{
+    border: solid 8px transparent;
+}
+
+header .main-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    flex-grow: 1;
+
+    margin-left: 30%;
+}
+
+header .main-nav a{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+header .main-nav li{
+    padding-bottom: 12px;
+    padding-right: 12px;
+    border-right: solid 4px transparent;
+    border-bottom: solid 4px transparent;
+
+    transition: border-right 0.3s, border-bottom 0.3s;
+}
+
+header .main-nav li:hover{
+    border-right:solid 4px orange;
+    border-bottom: solid 4px orange;
+}
+
 .hero-text-box{
     position: absolute;
     top: 50%;
@@ -46,7 +96,7 @@ header h1{
     letter-spacing: 1px;
 
     /*Transforma o texto para letras maiusculas*/
-    text-transform: uppercase;
+    text-transform: uppercase; 
 
     margin-bottom: 20px;
 
@@ -65,13 +115,36 @@ header a{
     padding: 5px 30px;
     margin-right: 10px;
 
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
 }
 
 .btn-full{
     color:#fff;
     background-color: orange;
+
+ 
+}
+
+.btn-full:hover,
+.btn-full:active
+{
+
+    background-color: rgb(192, 124, 0);
+    border-color: rgb(192, 124, 0);
+
 }
 
 .btn-ghost{
+
     color: orange;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+
+    background-color: rgb(192, 124, 0);
+    border-color: rgb(192, 124, 0);
+    color:white;
+
 }
